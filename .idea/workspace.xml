@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47bcdb2-fb6c-43d2-971e-3c6845feb11b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/CustomButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Button.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Keyboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
