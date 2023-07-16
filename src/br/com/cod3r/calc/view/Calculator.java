@@ -5,14 +5,15 @@ import java.awt.*;
 
 public class Calculator extends JFrame {
     public Calculator(){
-        organizarLayout();
+        defineLayout();
+        //setUndecorated(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(232,322);
         setLocationRelativeTo(null);
         setVisible(true);
     }
 
-    private void organizarLayout() {
+    private void defineLayout() {
         setLayout(new BorderLayout());
 
         Display display = new Display();
