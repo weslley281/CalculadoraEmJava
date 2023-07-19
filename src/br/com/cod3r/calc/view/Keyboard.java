@@ -2,8 +2,10 @@ package br.com.cod3r.calc.view;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Keyboard extends JPanel {
+public class Keyboard extends JPanel implements ActionListener {
     private final Color darkGray = new  Color(54,54,54);
     private final Color dimGray = new  Color(105,105,105);
     private final Color darkBlue = new  Color(0,0,205);
@@ -49,6 +51,16 @@ public class Keyboard extends JPanel {
         c.gridx = x;
         c.gridy = y;
         CustomButton customButton = new CustomButton(text,color);
+        customButton.addActionListener(this);
         add(customButton,c);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() instanceof JButton){
+            JButton jButton = (JButton) e.getSource();
+            System.out.println(jButton.getText());
+        }
+        System.out.println("Executado");
     }
 }
