@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47bcdb2-fb6c-43d2-971e-3c6845feb11b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/cod3r/calc/model/Memory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/cod3r/calc/view/Keyboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +33,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/codigos/JavaAndreLacono"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Run Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
