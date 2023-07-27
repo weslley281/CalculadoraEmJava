@@ -63,6 +63,5 @@ public class Keyboard extends JPanel implements ActionListener {
             JButton jButton = (JButton) e.getSource();
             Memory.getInstance().processCommand(jButton.getText());
         }
-        System.out.println("Executado");
     }
 }
