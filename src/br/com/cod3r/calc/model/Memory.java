@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Memory {
     private enum CommandType {
-        RESET, NUMBER, DIV, MULT, SUM, EQUAL, COMMA, SUB
+        RESET, NUMBER, DIV, MULT, SUM, EQUAL, COMMA, SUB, SIGN
     }
     private static final Memory instance = new Memory();
     private final List<ObserverMemomy> observers = new ArrayList<>();
@@ -41,6 +41,8 @@ public class Memory {
             bufferText = "";
             replace = false;
             lastOperation = null;
+        } else if (commandType == CommandType.SIGN && actualText.contains("-")) {
+            actualText = "-" + actualText;
         } else if (commandType == CommandType.NUMBER || commandType == CommandType.COMMA) {
             actualText = replace ? text : actualText + text;
             replace = false;
@@ -55,7 +57,7 @@ public class Memory {
     }
 
     private String getOperationResult() {
-        if (lastOperation == null){
+        if (lastOperation == null || lastOperation == CommandType.EQUAL){
             return actualText;
         }
         double bufferNumber = Double.parseDouble(bufferText.replace(",","."));
@@ -99,6 +101,8 @@ public class Memory {
                 return CommandType.EQUAL;
             }else if (",".equals(text) && !actualText.contains(",")) {
                 return CommandType.COMMA;
+            }else if ("+/-".equals(text)) {
+                return CommandType.SIGN;
             }
         }
         return null;
